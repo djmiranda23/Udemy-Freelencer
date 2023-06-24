@@ -10,6 +10,11 @@
 /*-------------------------*/
 html{
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
 }
 /*-------------------------*/
 body{
@@ -17,9 +22,24 @@ body{
   font-family: 'Krub', sans-serif;
 }
 /*-------------------------*/
+h1{
+  font-size: 3.8rem;
+}
+/*-------------------------*/
+h2{
+  font-size: 2.8rem;
+}
+/*-------------------------*/
+h3{
+  font-size: 1,8rem;
+}
+/*-------------------------*/
+h1,h2,h3{
+  text-align: center;
+}
+/*-------------------------*/
 .titulo {
   text-align: center;
-  font-size: 3.8rem;
   color: var(--oscuroo);
 }
 /*-------------------------*/
@@ -73,9 +93,32 @@ body{
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 450px;
+/*padding: 20px;*/
+  position: relative;
 }
 /*-------------------------*/
+.contenido-hero{
+  position: absolute;
+  background-color: rgba(0,0,0, .7);
+  width: 100%;
+  height: 100%;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*-------------------------*/
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+/*-------------------------*/
+.ubicacion{
+  display: flex;
+  align-items: flex-end;
+}
 /*@media (min-width: ) {
     
 }
