@@ -23,7 +23,7 @@ body{
 
 .titulo span{
   font-size: 2rem;
-  text-align: center ;
+  text-align: center;
 }
 
 .contenedor{
@@ -37,6 +37,7 @@ body{
 .navegacion-principal{
   display: flex;
   flex-direction: column;
+  display: block;
 }
 
 @media (min-width: 480px) {
